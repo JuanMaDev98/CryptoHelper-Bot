@@ -2,7 +2,7 @@ import telebot
 
 # Crea una instancia del bot con tu token de API de Telegram
 bot_token = input('Introduce tu token de API de Telegram: ')
-bot = telebot.TeleBot('TOKEN_DEL_BOT')
+bot = telebot.TeleBot(bot_token)
 
 # Código para responder al mensaje /help
 @bot.message_handler(commands=['help'])
